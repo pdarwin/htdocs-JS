@@ -1,0 +1,21 @@
+.menu-horizontal {
+    text-align: center;
+}
+
+.menu-horizontal ul {
+    list-style-type: none;
+}
+
+.menu-horizontal li {
+    display: inline;
+}
+
+.menu-horizontal a {
+    padding: 13px;
+    border: 4px solid pink;
+    background-color: #dddddd;
+}
+
+.menu-horizontal a:hover {
+    background-color: red;
+}

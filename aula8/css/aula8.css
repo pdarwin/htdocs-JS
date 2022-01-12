@@ -1,0 +1,15 @@
+#balance {
+    cursor: not-allowed;
+}
+
+.contacts div>p {
+    font-weight: bolder;
+}
+
+.contacts div~p {
+    background-color: red;
+}
+
+.contacts div p+p {
+    background-color: aliceblue;
+}

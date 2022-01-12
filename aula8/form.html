@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Aula 8</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu_horizontal.css">
+    <link rel="stylesheet" href="css/menu_vertical.css">
+    <link rel="stylesheet" href="css/menu_absoluto.css">
+    <link rel="stylesheet" href="css/aula8.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+
+    <div class="header float-100">
+        <h2>Banco Requalificar</h2>
+    </div>
+
+    <div class="menu-horizontal float-100">
+        <ul>
+            <li class="li-home">
+                <a href="#home">Home</a>
+                <div class="dropdown-content">
+                    <a href="#">Pessoal</a>
+                    <a href="#">Definições</a>
+                    <a href="#">Sair</a>
+                </div>
+            </li>
+            <li><a href="#news">Notícias</a></li>
+            <li><a href="#contact">Contatos</a></li>
+            <li><a href="#about">Sobre</a></li>
+        </ul>
+    </div>
+
+    <div class="row float-100">
+        <div class="column menu-vertical" style="background-color:#aaa;">
+            <ul>
+                <li>
+                    <a href="#about">Informações Gerais</a>
+                </li>
+                <li><a id="balance" href="#home">Saldos</a></li>
+                <li><a href="#news">Crédito</a></li>
+                <li><a href="#contact">Poupanças</a></li>
+            </ul>
+        </div>
+        <div class="column column-form" style="background-color:#bbb;">
+            <form action="index.html">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <div class="footer float-100">
+        <p>Footer</p>
+    </div>
+
+    <div class="menu-absoluto">
+    </div>
+
+</body>
+
+</html>
