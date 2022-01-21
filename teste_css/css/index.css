@@ -1,0 +1,23 @@
+html, body { 
+    padding: 10px 10px 3px 10px; 
+    width: 860px; 
+    margin:20px auto; 
+    background: #fff;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.float-100 {
+    float: left;
+    width: 100%;
+}
+
+.header {
+    background: url(../images/bg.jpg) repeat-x;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    border-bottom: 3px solid darkorange ;
+    }

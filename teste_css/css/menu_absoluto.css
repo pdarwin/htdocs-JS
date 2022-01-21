@@ -1,0 +1,19 @@
+.menu-absoluto {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    padding: 50px;
+    background-image: url("../images/sprite.png") ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 5px solid;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.menu-absoluto:hover {
+    opacity: 1;
+}

@@ -1,0 +1,28 @@
+.footer{
+    background-color:darkgray;
+}
+.footer span {
+    height: 30px;
+    margin: 10px;
+    float: left;
+    width: 30px;
+    border: black 5px solid;
+    position: relative;
+    z-index: 1;
+}
+
+.footer span:hover {
+    border: white 5px solid;
+}
+
+.home {
+    background: url('../images/sprite.png') 0 0;
+}
+
+.voltar {
+    background: url('../images/sprite.png') -47px 0;
+}
+
+.frente {
+    background: url('../images/sprite.png') -91px 0;
+}
