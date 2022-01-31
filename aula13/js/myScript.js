@@ -1,0 +1,1 @@
+document.getElementById("section-p-1").style.color = "red";
