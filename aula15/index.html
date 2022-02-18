@@ -16,22 +16,23 @@
     <p>3</p>
     <p>4</p>
 
-    <button type="button" id="b1">Try it</button>
-    <button type="button" id="b2">Try it again</button>
+    <button type="button" id="b1">CSS V 1</button>
+    <button type="button" id="b2">CSS V 2</button>
+    <button type="button" id="b3">CSS D</button>
+    <button type="button" id="b4">Outer HTML</button>
+    <button type="button" id="b5">Remove</button>
+    <button id="myBtn">Try it</button>
 
     <script>
 
         let set = true;
 
-        let button = document.getElementById("b1");
-        button.addEventListener("click", function(event){
-        escondeImpares ();
-        });
+        document.getElementById("b1").addEventListener("click", function(event){ escondeImpares (); });
+        document.getElementById("b2").addEventListener("click", function(event){ escondeImpares2 (); });
+        document.getElementById("b3").addEventListener("click", function(event){ escondeImpares3 (); });
+        document.getElementById("b4").addEventListener("click", function(event){ escondeImpares4 (); });
+        document.getElementById("b5").addEventListener("click", function(event){ escondeImpares5 (); });
 
-        document.getElementById("b2").addEventListener("click", function(event){
-        escondeImpares2 ();
-        });
-        
         function escondeImpares () 
         { 
             let all = document.getElementsByTagName ("p");
@@ -58,7 +59,62 @@
             { set ? set = false : set = true};
         };
 
-    </script>
+        function escondeImpares3 () 
+        { 
+            let all = document.getElementsByTagName ("p");
+            for (var i = 0; i< all.length; i++)
+            {
+                if (all[i].innerHTML%2 != 0)
+                {
+                    { set ? all[i].style.display = "none" : all[i].style.display = "block" }; 
+                }
+            }
+            { set ? set = false : set = true};
+        };
+
+        function escondeImpares4 () 
+        { 
+            let all = document.getElementsByTagName ("p");
+            for (var i = 0; i< all.length; i++)
+            {
+                if (all[i].innerHTML%2 != 0)
+                {
+                    all[i].outerHTML ="" ; 
+                }
+            }
+            { set ? set = false : set = true};
+        };
+
+        
+        function escondeImpares5 () 
+        { 
+            let all = document.getElementsByTagName ("p");
+            for (var i = 0; i< all.length; i++)
+            {
+                if (all[i].innerHTML%2 != 0)
+                {
+                    all[i].remove(); 
+                }
+            }
+            { set ? set = false : set = true};
+        };
+
+        document.getElementById("myBtn").addEventListener("click", function () {
+
+        const y = document.querySelectorAll("p");
+
+        for (let i = 0; y.length > i; i++) {
+        console.log(i);
+        if (i % 2 == 0) {
+            y[i].remove();
+        }
+
+}
+
+
+});
+</script>
+    <script src= "nada.js" />    
 
 </body>
 </html>

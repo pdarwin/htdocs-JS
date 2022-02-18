@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h2>Javascript HTML Dom</h2>
+
+    <div id="inf">
+
+    </div>
+
+    <button type="button" id="b1">Colocar coisas</button>
+
+    <script>
+
+        let lista = { "alunos": [{ "nome": "Alda", "idade": 25 }, { "nome": "ivone", idade: 30 }] }
+
+        document.getElementById("b1").addEventListener("click", function(event){ mostraInfo (); });
+   
+        function mostraInfo () 
+        { 
+            for (var i = 0; i< lista.alunos.length  ; i++)
+            {   
+
+                let para = document.createElement("img");
+                para.src = "https://i0.wp.com/bp1.blogger.com/_rT3GC5d9oDw/R-Ew0QAN5eI/AAAAAAAAB7s/ZSA1--sYtq0/s400/bst-before.jpg";
+                para.width= "100";
+
+                let element = document.getElementById("inf");
+                element.prepend(para);
+
+                let keyNames = Object.keys(lista.alunos[i]);
+
+                para = document.createElement("p");
+                para.textContent = keyNames[0] + ": " + lista.alunos[i].nome.slice(0,1).toUpperCase () + lista.alunos[i].nome.slice (1,lista.alunos[i].nome.length);
+                addElement (para);
+
+                para = document.createElement("p");
+                let node = document.createTextNode(keyNames[1] + ": " + lista.alunos[i].idade);
+                para.appendChild(node);
+
+                addElement (para);
+                
+            }
+
+        };
+
+
+        function addElement (newElement)
+        {
+            let element = document.getElementById("inf");
+            element.appendChild (newElement );
+        }    
+</script>
+
+</body>
+</html>
