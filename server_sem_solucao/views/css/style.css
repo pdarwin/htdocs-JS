@@ -1,0 +1,35 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#modal {
+    height: 300px;
+    width: 300px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    padding: 30px;
+    display: none;
+}
+
+label {
+    display: block;
+}
+
+input {
+    margin-bottom: 35px;
+}
