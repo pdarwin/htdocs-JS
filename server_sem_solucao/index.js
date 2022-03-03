@@ -43,6 +43,7 @@ app.post('/setUser', function(req, res) {
     let id = req.body.id;
     let name = req.body.name;
     let password = req.body.password;
+    let profession = req.body.profession;
     let indexG = 0;
 
     result['user'].forEach((element, index) => {
@@ -50,6 +51,7 @@ app.post('/setUser', function(req, res) {
             indexG = index;
             result['user'][index]['name'] = name;
             result['user'][index]['password'] = password;
+            result['user'][index]['profession'] = profession;
         }
 
     });
@@ -58,4 +60,4 @@ app.post('/setUser', function(req, res) {
 
 })
 
-app.use('/', express.static(path.join(__dirname, 'views')))
+app.use('/', express.static(path.join(__dirname, 'views'))) 

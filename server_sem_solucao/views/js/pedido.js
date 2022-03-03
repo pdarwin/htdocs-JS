@@ -12,6 +12,7 @@ function loadDoc() {
         let row = table.insertRow (index + 1);
         insertCell(row, 0, "<button id='" + index + "'>Detalhe</button>");
         insertCell (row, 0, element.id);
+        insertCell (row, 0, element.profession);
         insertCell (row, 0, element.password);
         insertCell (row, 0, element.name);
       })
@@ -35,6 +36,7 @@ function addEventButton(users) {
             document.getElementById('modal').style.display = 'block'
             document.getElementById('i-name').value = element.name;
             document.getElementById('i-password').value = element.password;
+            document.getElementById('i-job').value = element.profession;
             document.getElementById('i-id').value = element.id;
         });
     });
